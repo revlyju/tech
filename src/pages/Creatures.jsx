@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PawPrint, Search, SlidersHorizontal, Info } from "lucide-react";
-import { creaturesData } from "../data/CreaturesData";
+import { creaturesData } from "../data/creaturesData";
 
 export default function Creatures() {
   const [searchQuery, setSearchQuery] = useState("");
