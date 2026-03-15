@@ -8,6 +8,7 @@ import Potions from "./pages/Potions";
 import SortingHat from "./pages/SortingHat";
 import Creatures from "./pages/Creatures";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         </main>
         <Footer />
       </div>
+      <Analytics />
     </Router>
   );
 }
