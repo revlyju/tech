@@ -1,10 +1,17 @@
+import { useState } from "react";
 import Beaker from "lucide-react";
 import { Search, SlidersHorizontal, Sparkles } from "lucide-react";
 import { potionsData } from "../data/potions/potionsData";
 
 export default function Potions() {
+  const [searchQuery, setSearchQuery] = useState("");
   const potionMaster = "Snape";
   
+  const filteredPotions = potionsData.filter(potion => 
+    potion.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    potion.effect.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="min-h-screen pt-24 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -27,6 +34,8 @@ export default function Potions() {
             <input
               type="text"
               placeholder="Search potions by name or effect..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-amber-50 focus:outline-none focus:border-amber-500/50 transition-all placeholder:text-amber-50/20"
             />
           </div>
@@ -38,7 +47,7 @@ export default function Potions() {
 
         {/* Potions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {potionsData.map((potion, index) => (
+          {filteredPotions.map((potion, index) => (
             <div
               key={1}
               className="glass-card-hover p-6 group animate-fadeIn"
