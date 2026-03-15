@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { UseState as useState } from "react";
 import { Shield, Sparkles, Wand2, Star, RefreshCw } from "lucide-react";
 
 const questions = [

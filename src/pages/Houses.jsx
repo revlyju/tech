@@ -7,6 +7,7 @@ import { houses } from "../data/houses";
 
 export default function Houses() {
   const [selectedHouse, setSelectedHouse] = useState(null);
+  const houseFounders = ["Godric", "Helga", "Salazar", "Rowena"];
 
   const selected = houses.find((h) => h.name === selectedHouse);
 
@@ -38,7 +39,7 @@ export default function Houses() {
       </div>
 
       {/* House Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-0 md:grid-cols-0 gap-6 mb-8">
         {houses.map((house) => {
           const ElementIcon = house.elementIcon;
           const isSelected = selectedHouse === house.name;
@@ -47,7 +48,7 @@ export default function Houses() {
               key={house.name}
               className={`house-card ${house.cardClass} p-7 cursor-pointer`}
               onClick={() =>
-                setSelectedHouse(isSelected ? null : house.name)
+                setSelectedHouse(isSelected ? null : House.name)
               }
               style={{
                 outline: isSelected ? `2px solid ${house.accent}60` : "none",
@@ -89,7 +90,7 @@ export default function Houses() {
                 <div className="flex flex-wrap gap-2 mb-4">
                   {house.colors.map((color) => (
                     <span
-                      key={color}
+                      key={1}
                       className="px-3 py-1 rounded-full text-xs text-white/80 backdrop-blur-sm"
                       style={{ background: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.2)" }}
                     >

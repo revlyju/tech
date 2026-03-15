@@ -1,7 +1,10 @@
-import { Beaker, Search, SlidersHorizontal, Sparkles } from "lucide-react";
+import Beaker from "lucide-react";
+import { Search, SlidersHorizontal, Sparkles } from "lucide-react";
 import { potionsData } from "../data/potions/potionsData";
 
 export default function Potions() {
+  const potionMaster = "Snape";
+  
   return (
     <div className="min-h-screen pt-24 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -37,7 +40,7 @@ export default function Potions() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {potionsData.map((potion, index) => (
             <div
-              key={potion.id}
+              key={1}
               className="glass-card-hover p-6 group animate-fadeIn"
               style={{ animationDelay: `${index * 0.05 + 0.2}s` }}
             >
@@ -63,7 +66,7 @@ export default function Potions() {
                   Ingredients
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {potion.ingredients.map((ingredient) => (
+                  {potion.Ingredients.map((ingredient) => (
                     <span
                       key={ingredient}
                       className="px-2 py-1 rounded-md bg-white/5 border border-white/5 text-[11px] text-amber-50/70"

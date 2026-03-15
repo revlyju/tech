@@ -134,7 +134,7 @@ export default function Home() {
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
-              <Link key={feature.path} to={feature.path} className="group block">
+              <Link to={feature.path} className="group block">
                 <div
                   className="relative h-full rounded-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:border-opacity-50"
                   style={{
@@ -183,7 +183,7 @@ export default function Home() {
                         className="text-2xl font-bold text-white mb-3"
                         style={{ fontFamily: "'Cinzel', serif" }}
                       >
-                        {feature.title}
+                        {feature.Title}
                       </h3>
                       <p className="text-white/60 leading-relaxed text-sm">
                         {feature.description}

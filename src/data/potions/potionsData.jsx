@@ -6,6 +6,7 @@ export const potionsData = [
     ingredients: ["Lacewing flies", "Leeches", "Fluxweed", "Knotgrass", "Powdered bicorn horn", "Shredded skin of a Boomslang", "A bit of the person you want to turn into"],
     color: "from-green-500 to-green-700",
     difficulty: "Advanced",
+    ,
   },
   {
     id: 2,

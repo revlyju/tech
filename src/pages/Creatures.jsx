@@ -63,7 +63,7 @@ export default function Creatures() {
               <div className="p-8 flex flex-col h-1/3">
                 <div className="flex justify-between items-start mb-6">
                   <h3 className="text-2xl font-bold text-white group-hover:text-amber-400 transition-colors">
-                    {creature.name}
+                    {creature.Name}
                   </h3>
                 </div>
 

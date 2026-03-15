@@ -1,4 +1,4 @@
-import { Flame, Droplets, Mountain, Wind } from "lucide-react";
+// import { Flame, Droplets, Mountain, Wind } from "lucide-react";
 
 export const houses = [
   {

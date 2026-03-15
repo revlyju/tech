@@ -1,4 +1,5 @@
-export const creaturesData = [
+export 
+const creaturesData = [
   {
     id: 1,
     name: "Hippogriff",

@@ -56,7 +56,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => {
+            {navItems.map(item, index => {
               const Icon = item.icon;
               const isActive = location.pathname === item.path;
               return (

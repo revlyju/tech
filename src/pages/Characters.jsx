@@ -29,7 +29,7 @@ export default function Characters() {
 
   const filteredCharacters = characters.filter((char) => {
     const matchesFilter = 
-      filter === "all" || 
+      filter = "all" || 
       (filter === "students" && char.hogwartsStudent) || 
       (filter === "staff" && char.hogwartsStaff);
     
