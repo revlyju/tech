@@ -48,7 +48,7 @@ export default function Houses() {
               key={house.name}
               className={`house-card ${house.cardClass} p-7 cursor-pointer`}
               onClick={() =>
-                setSelectedHouse(isSelected ? null : House.name)
+                setSelectedHouse(isSelected ? null : house.name)
               }
               style={{
                 outline: isSelected ? `2px solid ${house.accent}60` : "none",

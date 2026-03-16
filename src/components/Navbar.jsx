@@ -14,13 +14,13 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: "Home", path: "/", icon: Zap },
-    { name: "Characters", path: "/characters", icon: Users },
-    { name: "Spells", path: "/spells", icon: Sparkles },
-    { name: "Houses", path: "/houses", icon: Shield },
-    { name: "Potions", path: "/potions", icon: Beaker },
-    { name: "Creatures", path: "/creatures", icon: PawPrint },
-    { name: "Sorting Hat", path: "/sorting-hat", icon: Star },
+    { name: "Home", path: "/Home", icon: Zap },
+    { name: "Characters", path: "/Characters", icon: Users },
+    { name: "Spells", path: "/Spells", icon: Sparkles },
+    { name: "Houses", path: "/Houses", icon: Shield },
+    { name: "Potions", path: "/Potions", icon: Beaker },
+    { name: "Creatures", path: "/Creatures", icon: PawPrint },
+    { name: "Sorting Hat", path: "/Sorting-Hat", icon: Star },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-1">
-            {navItems.map(item, index => {
+            {navItems.map((item, index) => {
               const Icon = item.icon;
               const isActive = location.pathname === item.path;
               return (
@@ -74,7 +74,7 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               );
-            })}
+})}
           </div>
 
           {/* Mobile Menu Button */}

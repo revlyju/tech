@@ -5,8 +5,7 @@ export const potionsData = [
     effect: "Allows the drinker to transform into someone else.",
     ingredients: ["Lacewing flies", "Leeches", "Fluxweed", "Knotgrass", "Powdered bicorn horn", "Shredded skin of a Boomslang", "A bit of the person you want to turn into"],
     color: "from-green-500 to-green-700",
-    difficulty: "Advanced",
-    ,
+    difficulty: "Advanced"
   },
   {
     id: 2,
@@ -14,7 +13,7 @@ export const potionsData = [
     effect: "Liquid Luck. Makes the drinker lucky for a certain period.",
     ingredients: ["Ashwinder egg", "Horseradish", "Squill bulb", "Murtlap tentacle", "Tincture of thyme", "Occamy eggshell", "Powdered common rue"],
     color: "from-amber-400 to-yellow-600",
-    difficulty: "Extremely Complex",
+    difficulty: "Extremely Complex"
   },
   {
     id: 3,
@@ -22,7 +21,7 @@ export const potionsData = [
     effect: "The most powerful love potion in the world.",
     ingredients: ["Standard Potioning Water", "Pearl Dust", "Rose Thorns", "Peppermint", "Powdered Moonstone"],
     color: "from-pink-400 to-rose-600",
-    difficulty: "Advanced",
+    difficulty: "Advanced"
   },
   {
     id: 4,
@@ -30,7 +29,7 @@ export const potionsData = [
     effect: "Causes the drinker to fall into a deep, death-like sleep.",
     ingredients: ["Powdered root of asphodel", "Infusion of wormwood", "Valerian root", "Sopophorous bean"],
     color: "from-purple-600 to-indigo-800",
-    difficulty: "Advanced",
+    difficulty: "Advanced"
   },
   {
     id: 5,
@@ -38,7 +37,7 @@ export const potionsData = [
     effect: "A powerful truth serum.",
     ingredients: ["A set of standard potion ingredients", "Jobberknoll feathers"],
     color: "from-cyan-400 to-blue-500",
-    difficulty: "Highly Advanced",
+    difficulty: "Highly Advanced"
   },
   {
     id: 6,
@@ -46,7 +45,7 @@ export const potionsData = [
     effect: "Allows a werewolf to keep their human mind while transformed.",
     ingredients: ["Wolfsbane (Aconite)"],
     color: "from-blue-700 to-slate-800",
-    difficulty: "Extremely Difficult",
+    difficulty: "Extremely Difficult"
   },
   {
     id: 7,
@@ -54,7 +53,7 @@ export const potionsData = [
     effect: "Regrows bones.",
     ingredients: ["Chinese Chomping Cabbage", "Pufferfish skeleton", "Scarab beetles"],
     color: "from-orange-400 to-orange-600",
-    difficulty: "Moderate",
+    difficulty: "Moderate"
   },
   {
     id: 8,
@@ -62,6 +61,6 @@ export const potionsData = [
     effect: "Extends life indefinitely.",
     ingredients: ["Philosopher's Stone"],
     color: "from-red-600 to-red-800",
-    difficulty: "Legendary",
+    difficulty: "Legendary"
   }
 ];

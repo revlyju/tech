@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Beaker from "lucide-react";
+import {Beaker} from "lucide-react";
 import { Search, SlidersHorizontal, Sparkles } from "lucide-react";
 import { potionsData } from "../data/potions/potionsData";
 
